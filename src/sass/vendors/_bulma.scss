@@ -1,0 +1,36 @@
+/* Update Bulma's variables */
+
+$family-sans-serif: $base-font;
+
+// Bulma's colors
+$primary: $clr-accent;
+$warning: $clr-warning;
+$info: $clr-info;
+$success: $clr-success;
+$danger: $clr-danger;
+$light: $clr-light;
+$dark: $clr-dark;
+$body-background-color: $bg-body;
+
+// Body
+$body-family: $base-font;
+$body-font-size: $body-fs;
+$body-line-height: $body-line-h;
+$text: $clr-text;
+
+//Bulma's breakpoints and layout
+$gap: $gutter;
+$tablet: $break-xsmall;
+$desktop: $break-small;
+$widescreen: $break-medium;
+$fullhd: $break-large;	
+
+//Message variables
+$message-body-border-width: 0 0 0 8px;
+
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/helpers/typography.sass";
+@import "~bulma/sass/elements/button.sass";
+@import "~bulma/sass/form/_all.sass";
+@import "~bulma/sass/components/message.sass";

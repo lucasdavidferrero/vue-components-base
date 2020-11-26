@@ -1,0 +1,41 @@
+.button-cta {
+    display: inline-block;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.9px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.6em 1.5em;
+    border: 1px solid rgba($clr-dark, 0.1);
+    color: var(--l-fg-cta, #{$clr-white});
+    background-color: var(--l-bg-cta, #{$clr-dark});
+    transition: background-color 0.2s ease-in-out;
+
+    &--small {
+        font-size: 0.9rem;
+    }
+    &--large {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        // Hacemos un switch de los colores...
+        color: var(--l-bg-cta, #{$clr-dark});
+        background-color: var(--l-fg-cta, #{$clr-white});
+    }
+
+    &.accent {
+        --l-bg-cta: #{$clr-accent};
+        --l-fg-cta: #{$clr-dark};
+    }
+    &.danger {
+        --l-bg-cta: #{$clr-danger};
+        --l-fg-cta: #{$clr-white};
+    }
+    &.success {
+        --l-bg-cta: #{$clr-success};
+        --l-fg-cta: #{$clr-dark};
+    }
+}
